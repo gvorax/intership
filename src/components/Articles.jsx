@@ -6,60 +6,60 @@ const Articles = () => {
   return (
     <div>
       {' '}
-      <section class="section-7">
-        <div class="main-container">
-          <h2 class="section--title">
+      <section className="section-7">
+        <div className="main-container">
+          <h2 className="section--title">
             Recent Articles
           </h2>
-          <p data-aos="fade-up" class="section--subtitle">
+          <p data-aos="fade-up" className="section--subtitle">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros elementum tristique. Duis cursus, mi quis
             viverra ornare, eros dolor interdum nulla, ut commodo diam libero
             vitae erat.
           </p>
-          <button  class="btn">
+          <button  className="btn">
             View all articles
           </button>
-          <div class="section--cards">
-            <div class="item">
-              <div class="card">
-                <div class="card--img">
+          <div className="section--cards">
+            <div className="item">
+              <div className="card">
+                <div className="card--img">
                   <img src={img7} alt='img7' />
                 </div>
-                <div class="card--content">
-                  <span class="date">February 8, 2021</span>
-                  <span class="card--title">
+                <div className="card--content">
+                  <span className="date">February 8, 2021</span>
+                  <span className="card--title">
                     How to Increase Your Engagement on Instagram
                   </span>
-                  <span class="author"> Katie Murphy </span>
+                  <span className="author"> Katie Murphy </span>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="card">
-                <div class="card--img">
+            <div className="item">
+              <div className="card">
+                <div className="card--img">
                   <img src={img4} alt="" />
                 </div>
-                <div class="card--content">
-                  <span class="date">February 8, 2021</span>
-                  <span class="card--title">
+                <div className="card--content">
+                  <span className="date">February 8, 2021</span>
+                  <span className="card--title">
                     How to Win Friends and Influence People
                   </span>
-                  <span class="author"> Marvin McKinney </span>
+                  <span className="author"> Marvin McKinney </span>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="card">
-                <div class="card--img">
+            <div className="item">
+              <div className="card">
+                <div className="card--img">
                   <img src={img7} alt="" />
                 </div>
-                <div class="card--content">
-                  <span class="date">February 8, 2021</span>
-                  <span class="card--title">
+                <div className="card--content">
+                  <span className="date">February 8, 2021</span>
+                  <span className="card--title">
                     iPhone Photography: Tips, Tricks, and Best Practices
                   </span>
-                  <span class="author"> Katie Murphy</span>
+                  <span className="author"> Katie Murphy</span>
                 </div>
               </div>
             </div>

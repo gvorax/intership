@@ -2,47 +2,51 @@ import React ,{useState} from 'react';
 import logo from '../assets/logo.svg';
 import cart from '../assets/cart.svg'
 const Header = () => {
-  const [isActive, setIsActive] = useState(false)
+  const [isActive, setIsActive] = useState(false);
+  const handle = ()=>{
+    setIsActive(!isActive);
+  }
+
   return (
-    <header class="header">
-      <div class="header--top">
-        <span class="header--text">
+    <header className="header">
+      <div className="header--top">
+        <span className="header--text">
           One week only—50% off all courses with code 50OFF at checkout
         </span>
       </div>
-      <div class="main-container">
-        <div class="header--bottom">
-          <div class="header--logo">
+      <div className="main-container">
+        <div className="header--bottom">
+          <div className="header--logo">
             <a href="./index.html">
               <img src={logo} alt="logo" />
             </a>
           </div>
-          <nav class="header--nav">
-            <ul class="header--list">
-              <li class="header--list__item">
+          <nav className={`header--nav ${isActive ? 'open--nav' : null}`}>
+            <ul className="header--list">
+              <li className="header--list__item">
                 <a href="#"> Courses</a>
               </li>
-              <li class="header--list__item">
+              <li className="header--list__item">
                 <a href="#"> Free Workshops</a>
               </li>
-              <li class="header--list__item">
+              <li className="header--list__item">
                 <a href="#"> Blog</a>
               </li>
-              <li class="header--list__item">
+              <li className="header--list__item">
                 <a href="#"> About</a>
               </li>
-              <li class="header--list__item">
+              <li className="header--list__item">
                 <a href="#"> Contact</a>
               </li>
             </ul>
-            <i class="uil uil-times"></i>
+            <i className="uil uil-times" onClick={handle}></i>
           </nav>
-          <div class="header--cart">
+          <div className="header--cart">
             <img src={cart} alt="cart" />
-            <div class="header--cart__count">0</div>
+            <div className="header--cart__count">0</div>
           </div>
-          <button class={`header--btn ${isActive ? 'open--nav' : null}`}>
-            <i class="uil uil-bars" onClick={()=>setIsActive(!isActive)}></i>
+          <button className={`header--btn`} onClick={handle}>
+            <i className="uil uil-bars"></i>
           </button>
         </div>
       </div>

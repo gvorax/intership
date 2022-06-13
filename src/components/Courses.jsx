@@ -4,21 +4,21 @@ import img1 from '../assets/1.png';
 const Courses = () => {
   return (
     <div>
-      <section class="section-1">
-      <div class="main-container">
-        <div class="section--banner">
-          <div class="section--banner__left">
-            <span class="top--item"> Featured Course </span>
-            <h1 class="title">Run your own online learning platform</h1>
-            <p class="subheader">
+      <section className="section-1">
+      <div className="main-container">
+        <div className="section--banner">
+          <div className="section--banner__left">
+            <span className="top--item"> Featured Course </span>
+            <h1 className="title">Run your own online learning platform</h1>
+            <p className="subheader">
               A deep-dive on the Instagram algorythm, hashtags, content
               strategy, and branding.
             </p>
-            <span class="author">Kathryn Murphy</span>
-            <button class="btn">Learn More</button>
+            <span className="author">Kathryn Murphy</span>
+            <button className="btn">Learn More</button>
           </div>
-          <div class="section--banner__right">
-            <div class="banner--img">
+          <div className="section--banner__right">
+            <div className="banner--img">
               <img src={img1} alt="img" />
             </div>
           </div>
