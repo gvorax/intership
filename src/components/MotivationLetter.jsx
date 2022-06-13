@@ -1,39 +1,48 @@
 import React from 'react';
-import star from '../assets/stars.svg'
+import star from '../assets/stars.svg';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const MotivationLetter = () => {
   return (
-    <div>
-      <section className="section-5">
-        <div className="main-container">
-          <div className="swiper mySwiper">
-            <div className="swiper-wrapper">
-              <div className="swiper-slide">
-                <img className="stars" src={star} alt="img" />
-                <p className="text">
-                  “Kate’s courses are a game changer. She’s thorough, organized,
-                  and explains things in a no-nonsense way that makes it easy
-                  for anyone—beginners to experts—to learn something from her
-                  courses and take their game to the next level.”
-                </p>
-                <span className="author"> James Brown, Influencer </span>
-              </div>
-              <div className="swiper-slide">
-                <img className="stars" src={star} alt="img" />
-                <p className="text">
-                  “Kate’s courses are a game changer. She’s thorough, organized,
-                  and explains things in a no-nonsense way that makes it easy
-                  for anyone—beginners to experts—to learn something from her
-                  courses and take their game to the next level.”
-                </p>
-                <span className="author"> James Brown, Influencer </span>
-              </div>
+    <section className="section-5">
+      <div className="main-container">
+        <Swiper
+          pagination={{
+            dynamicBullets: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className="swiper-slide">
+              <img className="stars" src={star} alt="img" />
+              <p className="text">
+                “Kate’s courses are a game changer. She’s thorough, organized,
+                 and explains things in a no-nonsense way that makes it easy
+                for anyone—beginners to experts—to learn something from her
+                 courses and take their game to the next level.” {' '}
+              </p>
+              <span className="author"> James Brown, Influencer </span>{' '}
             </div>
-            <div className="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-    </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-slide">
+              <img className="stars" src={star} alt="img" />
+              <p className="text">
+                “Kate’s courses are a game changer. She’s thorough, organized,
+                and explains things in a no-nonsense way that makes it easy for
+                anyone—beginners to experts—to learn something from her courses
+                and take their game to the next level.”
+              </p>
+              <span className="author"> James Brown, Influencer </span>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </section>
   );
 };
 
